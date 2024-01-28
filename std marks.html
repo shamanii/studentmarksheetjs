@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function myfunction(){
+		a=document.getElementById('d1').value;
+		document.getElementById('Name').innerHTML=a;
+		document.getElementById('d1').value='';
+		b=document.getElementById('d2').value;
+		document.getElementById('FName').value=b;
+		document.getElementById('d2').value='';
+
+		c=document.getElementById('d3').value;
+		document.getElementById('School').value=c;
+		document.getElementById('d3').value='';
+
+        d=document.getElementById('d4').value;
+		document.getElementById('Batch').value=d;
+		document.getElementById('d4').value='';
+
+
+		e=parseInt(document.getElementById('d5').value);
+		/*if (e<=33) { 
+		document.getElementById('d5').value='pass';
+		}
+		else{
+		document.getElementById('d5').value='fail';}*/
+
+		document.getElementById('php').value=e;
+		if (e<=33/* && h>=80*/) {
+	
+	document.getElementById('php').value='Fail';
+	}
+	
+	else if(e>100){
+	document.getElementById('php').value='invalid';
+
+
+	}
+
+		document.getElementById('d5').value='';
+
+		f=parseInt(document.getElementById('d6').value);
+		document.getElementById('C++').value=f;
+		if (f<=33/* && h>=80*/) {
+	
+	document.getElementById('C++').value='Fail';
+	}
+	
+	else if(f>100){
+	document.getElementById('C++').value='invalid';
+
+
+	}
+		document.getElementById('d6').value='';
+
+		g=parseInt(document.getElementById('d7').value);
+		document.getElementById('java').value=g;
+		if (g<=33/* && h>=80*/) {
+	
+	document.getElementById('java').value='Fail';
+	}
+	
+	else if(g>100){
+	document.getElementById('java').value='invalid';
+
+
+	}
+
+		document.getElementById('d7').value='';
+
+		h=parseInt(document.getElementById('d8').value);
+		document.getElementById('JavaScript').value=h;
+			if (h<=33/* && h>=80*/) {
+	
+	document.getElementById('JavaScript').value=h+'Fail';
+	}
+	
+	else if(h>100){
+	document.getElementById('JavaScript').value='invalid';
+
+
+	}
+		document.getElementById('d8').value='';
+
+		var i=e+f+g+h;
+		document.getElementById('OBT').value=i;
+		j=i*100/500;
+		k=document.getElementById('per').value=j;
+
+		if (k<=90 && k>=80) {
+	
+	document.getElementById('Grade').value='A1';
+
+	}
+	else if (k<=80 && k>=70) {
+	
+	document.getElementById('Grade').value='A';
+
+	}
+	else if (k<=70 && k>=60) {
+	
+	document.getElementById('Grade').value='B';
+
+	}
+	else if (k<=60 && k>=45) {
+	
+	document.getElementById('Grade').value='C';
+
+	}
+	else if (k<=45 && k>=33) {
+	
+	document.getElementById('Grade').value='D';
+
+	}
+	else{
+	document.getElementById('Grade').value='fail';
+
+
+	}
+	
+    }
+
+
+
+
+	</script>
+	
+</head>
+<body>
+	<h3>Sindh Agriculture University<br> Tandojam</h3>
+	<br>
+	<input type="text" id="d1" placeholder="Enter the student Name!">
+	<input type="text" id="d2" placeholder="Enter the student's Father's Name!"><br><br>
+	<input type="text" id="d3" placeholder="Enter the school Name!">
+	<input type="text" id="d4" placeholder="Enter the batch Number!"><br><br>
+	<input type="text" id="d5" placeholder="Enter the Php marks!"><br><br>
+	<input type="text" id="d6" placeholder="Enter the C++ marks!"><br><br>
+	<input type="text" id="d7" placeholder="Enter the Java marks!"><br><br>
+	<input type="text" id="d8" placeholder="Enter the JavaScript marks!"><br><br>
+	<button onclick="myfunction()">Submit</button>
+	<br>
+	<br>
+	<table border="1px" width="300px">
+		<tr>
+		<td>Name!</td>
+		<td id="Name"></td>
+		</tr>
+		<tr>
+		<td>Father's Name</td>
+		<td ><input type="text" id="FName" size="25px">   </td>
+		</tr>
+		<tr>
+		<td> School</td>
+		<td ><input type="text" id="School" size="25px">      </td>
+		</tr>
+		<tr>
+		<td>Batch</td>
+		<td ><input type="text" id="Batch" size="25px"> </td>
+		</tr>
+		<tr>
+		<td>Php</td>
+		<td ><input type="text" id="php" size="25px">  </td>
+		</tr><tr>
+		<td>C++</td>
+		<td ><input type="text" id="C++"  size="25px">  </td>
+		</tr>
+		<tr>
+		<td>Java </td>
+		<td ><input type="text" id="java" size="25px"> </td>
+		</tr><tr>
+		<td>JavaScript</td>
+		<td ><input type="text" id="JavaScript" size="25px"></td>
+		</tr>
+		<tr>	<td>OBT Marks</td>
+			<td> <input type="text" id="OBT" size="25px"></td>
+		</tr>
+		<tr>
+		<td>Total</td>
+		<td>500</td>
+		</tr><tr>
+		<td>per%</td>
+		<td><input type="text" id="per" size="25px"></td>
+		</tr>
+		<tr>
+		<td> Grade</td>
+		<td><input type="text" id="Grade" size="25px"></td>
+		</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
